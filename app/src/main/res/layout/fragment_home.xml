@@ -1,0 +1,120 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_layout_sv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/ten_dp"
+    tools:context=".fragments.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/et_search_launcher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fifteen_dp"
+            android:drawableLeft="@drawable/tb_search"
+            android:drawablePadding="@dimen/ten_dp"
+            android:drawableStart="@drawable/tb_search"
+            android:focusable="false"
+            android:hint="@string/search" />
+        <!--android:drawableRight="@drawable/listing_tab_details"
+        android:drawableEnd="@drawable/listing_tab_details"-->
+
+        <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/rv_right_drawable_items"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_below="@+id/et_search_launcher"-->
+        <!--android:layout_marginEnd="@dimen/fifteen_dp"-->
+        <!--android:layout_marginStart="@dimen/fifteen_dp"-->
+        <!--android:layout_marginTop="@dimen/negative_twenty_three"-->
+        <!--android:background="@color/DEFAULT_BG"-->
+        <!--android:visibility="gone" />-->
+
+        <RelativeLayout
+            android:id="@+id/recent_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_search_launcher"
+            android:layout_marginBottom="@dimen/ten_dp">
+
+            <com.martoff.esmart.utils.RobotoTextViewLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/btn_recent_more"
+                android:layout_toStartOf="@+id/btn_recent_more"
+                android:text="@string/recent_items"
+                android:textSize="@dimen/twenty_five_sp" />
+
+            <Button
+                android:id="@+id/btn_recent_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@color/colorPrimary"
+                android:drawableEnd="@drawable/btn_next"
+                android:drawableRight="@drawable/btn_next"
+                android:padding="@dimen/ten_dp"
+                android:text="@string/more"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_recent_items"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recent_layout"
+            android:layout_centerHorizontal="true" />
+
+        <RelativeLayout
+            android:id="@+id/recent_searches_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rv_recent_items"
+            android:layout_marginBottom="@dimen/ten_dp"
+            android:layout_marginTop="@dimen/ten_dp">
+
+            <com.martoff.esmart.utils.RobotoTextViewLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/btn_search_more"
+                android:layout_toStartOf="@+id/btn_search_more"
+                android:text="@string/recent_searches"
+                android:textSize="@dimen/twenty_five_sp" />
+
+            <Button
+                android:id="@+id/btn_search_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@color/colorPrimary"
+                android:drawableEnd="@drawable/btn_next"
+                android:drawableRight="@drawable/btn_next"
+                android:padding="@dimen/ten_dp"
+                android:text="@string/more"
+                android:textColor="@android:color/white" />
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_recent_searches"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recent_searches_layout"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+</ScrollView>

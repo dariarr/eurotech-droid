@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#00cc00</color>-->
+    <!--<color name="colorPrimaryDark">#303F9F</color>-->
+    <color name="colorAccent">#00ff00</color>
+    <color name="colorPrimary">#7bbe22</color>
+    <color name="colorPrimaryDark">#5da004</color>
+    <color name="sell_your_motor_color">#F47F1E</color>
+    <color name="white">#FFF</color>
+    <color name="black">#000</color>
+
+    <color name="DEFAULT_BG">#efeeea</color>
+    <color name="BACKGROUND_COLOR">#dadada</color>
+    <color name="DEFAULT_TEXT_COLOR">#333333</color>
+    <!--<color name="GREEN_SOLID_BG">#7bbe22</color>-->
+    <!--<color name="GREEN_DARK_COLOR">#5da004</color>-->
+    <color name="GREEN_TEXT_COLOR">#669900</color>
+    <color name="TEXT_BTN_COLOR">#006699</color>
+    <color name="TEXT_COLOR_LIGHT">#999999</color>
+    <color name="TEXT_COLOR_LIGHTER">#cccccc</color>
+    <color name="SEPARATOR_COLOR">#dddddd</color>
+    <color name="TOOLBAR_TEXT_COLOR">#7c7c7c</color>
+    <color name="DISABLED_TEXT">#d0d0d0</color>
+
+</resources>

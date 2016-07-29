@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/DEFAULT_BG"
+    android:orientation="vertical">
+
+
+    <!--<com.martoff.esmart.utils.RobotoTextViewLight-->
+    <!--android:id="@+id/tv_tree"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="@dimen/six_dp"-->
+    <!--android:layout_marginStart="@dimen/six_dp" />-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_category_items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

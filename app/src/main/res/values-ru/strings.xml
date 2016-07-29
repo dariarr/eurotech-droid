@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="no_email_alert_0">Уведомления: Нет</string>
+    <string name="daily_alerts_1">Уведомления: Ежедневно</string>
+    <string name="weekly_alerts_2">Уведомления: Еженедельно</string>
+    <string name="fortnightly_alerts_3">Уведомления: Каждые два недели</string>
+    <string name="monthly_alert_4">Уведомления: Ежемесячно</string>
+
+    <string name="auth_error">Ошибка аутентификации</string>
+    <string name="login_incorrect">Вы неверно ввели имя пользователя или пароль.</string>
+    <string name="unexpected_server_error">Неожиданная ошибка</string>
+    <string name="unexpected_error_occurred">Неожиданная ошибка произошла</string>
+    <string name="crash_report">Отчет о сбое</string>
+    <string name="did_send_error_report">Приложение неожиданно завершилось в прошлый раз. Отправите сообщение об ошибке?</string>
+    <string name="internet_connection">Ошибка сети</string>
+    <string name="check_network">Проверьте соединение с Интернетом</string>
+    <string name="Cancel">Отмена</string>
+    <string name="Retry">Повторить</string>
+    <string name="Yes">Да</string>
+    <string name="No">Нет</string>
+    <string name="search_text_placeholder">Я ишу &#8230;</string>
+    <string name="HOME">ГЛАВНАЯ</string>
+    <string name="sell_an_item">Подать объявление</string>
+    <string name="all_categories">Все категории</string>
+    <string name="more">ПОКАЗАТЬ ВСЕ</string>
+    <string name="recent_items">Избранное</string>
+    <string name="dont_have_items">В избранном нет сохраненных товаров.</string>
+    <string name="recent_searches">Последние поиски</string>
+    <string name="no_recent_saved_searches">В избранном нет сохраненных поиски.</string>
+    <string name="guest">Гость</string>
+    <string name="join_us">Гость</string>
+    <string name="already_a_member">Уже зарегистрир ованы? \nВойти</string>
+    <string name="logout">Выход</string>
+    <string name="Home">Главная</string>
+    <string name="Orders">Заказы</string>
+    <string name="Messages">Сообщения</string>
+    <string name="Settings">Настройки</string>
+
+</resources>

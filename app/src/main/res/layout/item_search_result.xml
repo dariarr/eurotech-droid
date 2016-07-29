@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/one_dp"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:padding="@dimen/five_dp">
+
+    <ImageView
+        android:id="@+id/iv_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:contentDescription="@string/search_image"
+        android:src="@drawable/places_ic_search" />
+
+    <com.martoff.esmart.utils.RobotoTextViewLight
+        android:id="@+id/tv_search_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/three_dp"
+        android:layout_marginStart="@dimen/three_dp"
+        android:layout_toEndOf="@+id/iv_search"
+        android:layout_toLeftOf="@+id/iv_place_text_in_search_box"
+        android:layout_toRightOf="@+id/iv_search"
+        android:layout_toStartOf="@+id/iv_place_text_in_search_box"
+        android:lines="1" />
+
+    <ImageView
+        android:id="@+id/iv_place_text_in_search_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/three_dp"
+        android:layout_marginStart="@dimen/three_dp"
+        android:contentDescription="@string/place_text_in_search_box" />
+
+</RelativeLayout>

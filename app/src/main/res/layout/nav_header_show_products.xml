@@ -1,0 +1,652 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--THIS IS THE MAIN LAYOUT, WHICH MUST BE VISIBLE ON START-->
+    <LinearLayout
+        android:id="@+id/nav_ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/three_dp"
+        android:visibility="visible">
+
+        <com.martoff.esmart.utils.RobotoTextViewMedium
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Standard Filters"
+            android:textSize="@dimen/eighteen_sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/nav_rl_keywords"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/three_dp"
+                android:background="@color/white"
+                android:padding="@dimen/five_dp">
+
+                <com.martoff.esmart.utils.RobotoTextViewLight
+                    android:id="@+id/tv_keywords_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Keywords"
+                    android:textSize="@dimen/eighteen_sp" />
+
+                <com.martoff.esmart.utils.RobotoTextViewLight
+                    android:id="@+id/tv_keywords_stored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_keywords_header"
+                    android:layout_marginLeft="@dimen/eight_dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/six_dp"
+                    android:src="@drawable/arrow" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/three_dp"
+                android:background="@color/white"
+                android:padding="@dimen/five_dp">
+
+                <com.martoff.esmart.utils.RobotoTextViewLight
+                    android:id="@+id/tv_brands"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Brands"
+                    android:textSize="@dimen/eighteen_sp" />
+
+                <com.martoff.esmart.utils.RobotoTextViewLight
+                    android:id="@+id/tv_brands_stored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_brands"
+                    android:layout_marginLeft="@dimen/eight_dp"
+                    android:text="dummy text" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/six_dp"
+                    android:src="@drawable/arrow" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/three_dp"
+                android:background="@color/white"
+                android:padding="@dimen/five_dp">
+
+                <com.martoff.esmart.utils.RobotoTextViewLight
+                    android:id="@+id/tv_condition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Condition"
+                    android:textSize="@dimen/eighteen_sp" />
+
+                <com.martoff.esmart.utils.RobotoTextViewLight
+                    android:id="@+id/tv_conditions_stored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_condition"
+                    android:layout_marginLeft="@dimen/eight_dp"
+                    android:text="dummy text" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/six_dp"
+                    android:src="@drawable/arrow" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/nav_rl_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/three_dp"
+                android:background="@color/white"
+                android:padding="@dimen/five_dp">
+
+                <com.martoff.esmart.utils.RobotoTextViewLight
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Price"
+                    android:textSize="@dimen/eighteen_sp" />
+
+                <com.martoff.esmart.utils.RobotoTextViewLight
+                    android:id="@+id/tv_price_stored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_price"
+                    android:layout_marginLeft="@dimen/eight_dp"
+                    android:text="5-50 USD" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/six_dp"
+                    android:src="@drawable/arrow" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/three_dp"
+                android:background="@color/white"
+                android:padding="@dimen/five_dp">
+
+                <com.martoff.esmart.utils.RobotoTextViewLight
+                    android:id="@+id/tv_discount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Discount"
+                    android:textSize="@dimen/eighteen_sp" />
+
+                <com.martoff.esmart.utils.RobotoTextViewLight
+                    android:id="@+id/tv_discount_stored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_discount"
+                    android:layout_marginLeft="@dimen/eight_dp"
+                    android:text="10% or more for discount" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/six_dp"
+                    android:src="@drawable/arrow" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/three_dp"
+                android:background="@color/white"
+                android:padding="@dimen/five_dp">
+
+                <com.martoff.esmart.utils.RobotoTextViewLight
+                    android:id="@+id/tv_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Distance"
+                    android:textSize="@dimen/eighteen_sp" />
+
+                <com.martoff.esmart.utils.RobotoTextViewLight
+                    android:id="@+id/tv_distance_stored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_distance"
+                    android:layout_marginLeft="@dimen/eight_dp"
+                    android:text="Search nearby" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/six_dp"
+                    android:src="@drawable/arrow" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/three_dp"
+                android:background="@color/white"
+                android:padding="@dimen/five_dp">
+
+                <com.martoff.esmart.utils.RobotoTextViewLight
+                    android:id="@+id/tv_shipping"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shipping"
+                    android:textSize="@dimen/eighteen_sp" />
+
+                <com.martoff.esmart.utils.RobotoTextViewLight
+                    android:id="@+id/tv_shipping_stored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_shipping"
+                    android:layout_marginLeft="@dimen/eight_dp"
+                    android:text="10% or more for discount" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/six_dp"
+                    android:src="@drawable/arrow" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <com.martoff.esmart.utils.RobotoTextViewMedium
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:text="Group Name"
+            android:textSize="@dimen/eighteen_sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/three_dp"
+                android:background="@color/white"
+                android:padding="@dimen/five_dp">
+
+                <com.martoff.esmart.utils.RobotoTextViewLight
+                    android:id="@+id/tv_first_name_type3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FirstName{type:1}"
+                    android:textSize="@dimen/eighteen_sp" />
+
+                <com.martoff.esmart.utils.RobotoTextViewLight
+                    android:id="@+id/tv_tv_first_name_3_stored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_first_name_type3"
+                    android:layout_marginLeft="@dimen/eight_dp"
+                    android:text="Value1, Value7" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/six_dp"
+                    android:src="@drawable/arrow" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/three_dp"
+                android:background="@color/white"
+                android:padding="@dimen/five_dp">
+
+                <com.martoff.esmart.utils.RobotoTextViewLight
+                    android:id="@+id/tv_filter_name_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FilterName{type:1}"
+                    android:textSize="@dimen/eighteen_sp" />
+
+                <com.martoff.esmart.utils.RobotoTextViewLight
+                    android:id="@+id/tv_tv_filter_name_3_stored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_filter_name_3"
+                    android:layout_marginLeft="@dimen/eight_dp"
+                    android:text="Value1, Value2" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/six_dp"
+                    android:src="@drawable/arrow" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/three_dp"
+                android:background="@color/white"
+                android:padding="@dimen/five_dp">
+
+                <com.martoff.esmart.utils.RobotoTextViewLight
+                    android:id="@+id/tv_filter_name_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FilterName{type:4}"
+                    android:textSize="@dimen/eighteen_sp" />
+
+                <com.martoff.esmart.utils.RobotoTextViewLight
+                    android:id="@+id/tv_tv_filter_name_4_stored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_filter_name_4"
+                    android:layout_marginLeft="@dimen/eight_dp"
+                    android:text="Value1, Value2" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/six_dp"
+                    android:src="@drawable/arrow" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <com.martoff.esmart.utils.RobotoTextViewMedium
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:text="Group Name"
+            android:textSize="@dimen/eighteen_sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/three_dp"
+                android:background="@color/white"
+                android:padding="@dimen/five_dp">
+
+                <com.martoff.esmart.utils.RobotoTextViewLight
+                    android:id="@+id/tv_filter_name_type2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FirstName{type:2}"
+                    android:textSize="@dimen/eighteen_sp" />
+
+                <com.martoff.esmart.utils.RobotoTextViewLight
+                    android:id="@+id/tv_tv_first_name_2_stored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_filter_name_type2"
+                    android:layout_marginLeft="@dimen/eight_dp"
+                    android:text="Value1, Value2" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/six_dp"
+                    android:src="@drawable/arrow" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <com.martoff.esmart.utils.RobotoTextViewMedium
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:text="Group Name"
+            android:textSize="@dimen/eighteen_sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/three_dp"
+                android:background="@color/white"
+                android:padding="@dimen/five_dp">
+
+                <com.martoff.esmart.utils.RobotoTextViewLight
+                    android:id="@+id/tv_filter_name_type5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FirstName{type:5}"
+                    android:textSize="@dimen/eighteen_sp" />
+
+                <com.martoff.esmart.utils.RobotoTextViewLight
+                    android:id="@+id/tv_tv_first_name_5_stored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_filter_name_type5"
+                    android:layout_marginLeft="@dimen/eight_dp"
+                    android:text="Date here" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/six_dp"
+                    android:src="@drawable/arrow" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/three_dp">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/two_dp"
+                android:layout_marginRight="@dimen/two_dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="Reset"
+                android:textAllCaps="false" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/two_dp"
+                android:layout_marginStart="@dimen/two_dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="Done"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--HERE MAIN LAYOUT ENDS-->
+
+
+    <!--KEYWORDS DETAILED LAYOUT STARTS-->
+    <RelativeLayout
+        android:id="@+id/nav_rl_keywords_details_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/six_dp"
+        android:visibility="gone">
+
+        <com.martoff.esmart.utils.RobotoTextViewBold
+            android:id="@+id/tv_keywords_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/five_dp"
+            android:text="Keyword"
+            android:textSize="@dimen/eighteen_sp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_keywords_details"
+            android:layout_margin="@dimen/five_dp"
+            android:background="@color/white"
+            android:padding="@dimen/ten_dp"
+            android:theme="@style/autoCompleteTextView">
+
+            <AutoCompleteTextView
+                android:id="@+id/et_keywords_to_store"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Keywords..."
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_clear_keywords"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="@color/white"
+            android:text="Clear"
+            android:textAllCaps="false" />
+        <!-- android:background="@drawable/borders" -->
+
+        <Button
+            android:id="@+id/btn_apply_keywords"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/white"
+            android:text="Apply"
+            android:textAllCaps="false" />
+
+    </RelativeLayout>
+    <!--KEYWORDS DETAILED LAYOUT ENDS-->
+
+
+    <!--PRICE DETAILED LAYOUT STARTS-->
+    <RelativeLayout
+        android:id="@+id/nav_rl_price_details_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/six_dp"
+        android:visibility="gone">
+
+        <com.martoff.esmart.utils.RobotoTextViewBold
+            android:id="@+id/tv_price_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/five_dp"
+            android:text="Price"
+            android:textSize="@dimen/eighteen_sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_minimum_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_price_details"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="@dimen/five_dp">
+
+            <com.martoff.esmart.utils.RobotoTextViewLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/three_dp"
+                android:layout_marginRight="@dimen/three_dp"
+                android:text="Minimum"
+                android:textSize="@dimen/sixteen_sp" />
+
+            <EditText
+                android:id="@+id/et_minimum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:hint="BYR"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_maximum_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_minimum_layout"
+            android:layout_marginTop="@dimen/three_dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="@dimen/five_dp">
+
+            <com.martoff.esmart.utils.RobotoTextViewLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/three_dp"
+                android:layout_marginRight="@dimen/three_dp"
+                android:text="Maximum"
+                android:textSize="@dimen/sixteen_sp" />
+
+            <EditText
+                android:id="@+id/et_maximum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:hint="BYR"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_clear_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="@drawable/borders"
+            android:text="Clear"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_apply_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/borders"
+            android:text="Apply"
+            android:textAllCaps="false" />
+
+    </RelativeLayout>
+    <!--PRICE DETAILED LAYOU ENDS-->
+
+</RelativeLayout>

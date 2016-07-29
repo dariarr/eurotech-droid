@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.martoff.esmart.utils.RobotoTextViewLight
+        android:id="@+id/tv_right_drawable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:background="#FFFFFF"
+        android:padding="@dimen/five_dp"
+        android:text="All of eSmart"
+        android:textSize="@dimen/twenty_two_sp" />
+
+</LinearLayout>
